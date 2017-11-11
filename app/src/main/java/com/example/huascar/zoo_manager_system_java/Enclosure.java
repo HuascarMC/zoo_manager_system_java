@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class Enclosure<T extends Animal> {
 
-    ArrayList<T> enclosure;
+    private ArrayList<T> enclosure;
 
     public Enclosure() {
         this.enclosure = new ArrayList<>();
