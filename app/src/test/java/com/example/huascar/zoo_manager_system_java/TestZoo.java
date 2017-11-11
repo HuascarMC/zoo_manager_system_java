@@ -26,4 +26,23 @@ public class TestZoo {
         zoo.removeEnclosure(warthogEnclosure);
         assertEquals(0, zoo.numberOfEnclosures());
     }
+
+    @Test
+    public void testTotalNumberOfAnimals() {
+        Zoo zoo = new Zoo();
+        Enclosure warthogEnclosure = new Enclosure<Warthog>();
+        Enclosure lionEnclosure = new Enclosure<Lion>();
+        Enclosure jaguarEnclosure = new Enclosure<Jaguar>();
+        zoo.addEnclosure(warthogEnclosure);
+        zoo.addEnclosure(lionEnclosure);
+        zoo.addEnclosure(jaguarEnclosure);
+        Lion lion = new Lion(300);
+        Jaguar jaguar = new Jaguar(400);
+        Warthog warthog = new Warthog(350);
+        warthogEnclosure.addAnimal(warthog);
+        jaguarEnclosure.addAnimal(jaguar);
+        lionEnclosure.addAnimal(lion);
+        assertEquals(3, zoo.totalNumberOfAnimals());
+
+    }
 }

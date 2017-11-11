@@ -26,4 +26,12 @@ public class Zoo {
     public void removeEnclosure(Enclosure enclosureName) {
         enclosures.remove(enclosureName);
     }
+
+    public int totalNumberOfAnimals() {
+        int animals = 0;
+        for(Enclosure enclosure : enclosures) {
+            animals += enclosure.numberOfAnimals();
+        }
+        return animals;
+    }
 }
