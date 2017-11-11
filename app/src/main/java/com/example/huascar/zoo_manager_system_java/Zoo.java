@@ -17,4 +17,9 @@ public class Zoo {
     public void addEnclosure(Enclosure enclosureName) {
         enclosures.add(enclosureName);
     }
+
+    public int numberOfEnclosures() {
+        int actual = enclosures.size();
+        return actual;
+    }
 }
