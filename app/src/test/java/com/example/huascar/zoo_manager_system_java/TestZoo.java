@@ -55,4 +55,11 @@ public class TestZoo {
         int actual = zoo.sellAnimal(jaguar);
         assertEquals(400, actual);
     }
+
+    @Test
+    public void testZooHasVisitors() {
+        Zoo zoo = new Zoo();
+        Visitor visitor = new Visitor(40);
+
+    }
 }
