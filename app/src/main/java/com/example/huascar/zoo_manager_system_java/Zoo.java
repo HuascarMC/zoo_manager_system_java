@@ -9,6 +9,7 @@ import java.util.ArrayList;
 public class Zoo {
 
     private ArrayList<Enclosure> enclosures;
+    private int price = 30;
 
     public Zoo() {
         this.enclosures = new ArrayList<>();
