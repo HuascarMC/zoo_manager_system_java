@@ -1,5 +1,6 @@
 package com.example.huascar.zoo_manager_system_java;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 /**
@@ -60,5 +61,15 @@ public class Zoo {
     public int numberOfVisitors() {
         int actual = visitors.size();
         return actual;
+    }
+
+    public int totalValueAnimals() {
+        int total = 0;
+        for (Enclosure enclosure : enclosures) {
+            for (Animal animal : enclosure) {
+                total += animal.cash;
+            }
+        }
+        return total;
     }
 }

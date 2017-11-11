@@ -34,4 +34,7 @@ public class TestEnclosure {
         jaguarEnclosure.addAnimal(jaguar);
         assertEquals(jaguar, jaguarEnclosure.containsAnimal(jaguar));
     }
+
+    @Test
+    
 }

@@ -64,4 +64,22 @@ public class TestZoo {
         zoo.addVisitor(visitor);
         assertEquals(1, zoo.numberOfVisitors());
     }
+
+    @Test
+    public void testZooTotalAnimalValue() {
+        Zoo zoo = new Zoo();
+        Enclosure warthogEnclosure = new Enclosure<Warthog>();
+        Enclosure lionEnclosure = new Enclosure<Lion>();
+        Enclosure jaguarEnclosure = new Enclosure<Jaguar>();
+        zoo.addEnclosure(warthogEnclosure);
+        zoo.addEnclosure(lionEnclosure);
+        zoo.addEnclosure(jaguarEnclosure);
+        Lion lion = new Lion(300);
+        Jaguar jaguar = new Jaguar(400);
+        Warthog warthog = new Warthog(350);
+        warthogEnclosure.addAnimal(warthog);
+        jaguarEnclosure.addAnimal(jaguar);
+        lionEnclosure.addAnimal(lion);
+        assertEquals(1050, zoo.totalValueAnimals());
+    }
 }

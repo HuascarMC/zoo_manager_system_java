@@ -33,4 +33,12 @@ public class Enclosure<T extends Animal> {
         }
         return null;
     }
+
+    public int enclosureValue() {
+        int value = 0;
+        for (Animal animal : enclosure) {
+            value += animal.cash;
+        }
+        return value;
+    }
 }
