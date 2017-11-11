@@ -26,4 +26,6 @@ public class TestEnclosure {
         enclosure.removeAnimal(jaguar);
         assertEquals(0, enclosure.numberOfAnimals());
     }
+
+    @
 }

@@ -26,4 +26,8 @@ public class Enclosure<T extends Animal> {
     public void removeAnimal(T animal) {
         enclosure.remove(animal);
     }
+
+    public boolean containsAnimal(T animal) {
+        return enclosure.contains(animal);
+    }
 }
