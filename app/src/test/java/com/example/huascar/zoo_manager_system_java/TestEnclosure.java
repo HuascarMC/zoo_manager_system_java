@@ -32,6 +32,6 @@ public class TestEnclosure {
         Jaguar jaguar = new Jaguar(30);
         Enclosure jaguarEnclosure = new Enclosure<Jaguar>();
         jaguarEnclosure.addAnimal(jaguar);
-        assertEquals(true, jaguarEnclosure.containsAnimal(jaguar));
+        assertEquals(jaguar, jaguarEnclosure.containsAnimal(jaguar));
     }
 }
