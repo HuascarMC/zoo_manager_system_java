@@ -9,4 +9,8 @@ public class Warthog extends Animal {
     public Warthog(int cash) {
         super(cash);
     }
+
+    public int getCash() {
+        return cash;
+    }
 }

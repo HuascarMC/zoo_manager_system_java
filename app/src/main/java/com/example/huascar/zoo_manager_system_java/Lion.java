@@ -9,4 +9,8 @@ public class Lion extends Animal {
     public Lion(int cash) {
         super(cash);
     }
+
+    public int getCash() {
+        return cash;
+    }
 }
