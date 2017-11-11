@@ -17,4 +17,9 @@ public class Enclosure<T extends Animal> {
     public void add(T animal) {
         enclosure.add(animal);
     }
+
+    public int numberOfAnimals() {
+        int actual = enclosure.size();
+        return actual;
+    }
 }
