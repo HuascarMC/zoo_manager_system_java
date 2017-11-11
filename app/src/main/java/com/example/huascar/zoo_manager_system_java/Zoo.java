@@ -22,4 +22,8 @@ public class Zoo {
         int actual = enclosures.size();
         return actual;
     }
+
+    public void removeEnclosure(Enclosure enclosureName) {
+        enclosures.remove(enclosureName);
+    }
 }

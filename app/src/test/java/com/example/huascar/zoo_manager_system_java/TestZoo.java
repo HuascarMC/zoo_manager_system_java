@@ -17,4 +17,13 @@ public class TestZoo {
         zoo.addEnclosure(warthogEnclosure);
         assertEquals(1, zoo.numberOfEnclosures());
     }
+
+    @Test
+    public void testRemoveEnclosure() {
+        Zoo zoo = new Zoo();
+        Enclosure warthogEnclosure = new Enclosure<Warthog>();
+        zoo.addEnclosure(warthogEnclosure);
+        zoo.removeEnclosure(warthogEnclosure);
+        assertEquals(0, zoo.numberOfEnclosures());
+    }
 }
