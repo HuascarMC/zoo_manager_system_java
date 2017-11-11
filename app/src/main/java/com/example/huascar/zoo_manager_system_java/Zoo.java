@@ -35,9 +35,9 @@ public class Zoo {
         return animals;
     }
 
-    public void sellAnimal(Animal animalName) {
-        for (Enclosure enclosure : enclosures) {
-           if (enclosure.contains(animalName) == true);
-        }
-    }
+//    public void sellAnimal(Animal animalName) {
+//        for (Enclosure enclosure : enclosures) {
+//           if (enclosure.containsAnimal(animalName) == true);
+//        }
+//    }
 }
