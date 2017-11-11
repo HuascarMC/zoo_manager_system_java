@@ -13,4 +13,8 @@ public class Zoo {
     public Zoo() {
         this.enclosures = new ArrayList<>();
     }
+
+    public void addEnclosure(Enclosure enclosureName) {
+        enclosures.add(enclosureName);
+    }
 }
