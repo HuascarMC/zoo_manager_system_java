@@ -13,4 +13,8 @@ public class Enclosure<T extends Animal> {
     public Enclosure(ArrayList<T> enclosure) {
         this.enclosure = enclosure;
     }
+
+    public void add(T animal) {
+        enclosure.add(animal);
+    }
 }
