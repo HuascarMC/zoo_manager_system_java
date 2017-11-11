@@ -22,4 +22,8 @@ public class Enclosure<T extends Animal> {
         int actual = enclosure.size();
         return actual;
     }
+
+    public void removeAnimal(T animal) {
+        enclosure.remove(animal);
+    }
 }

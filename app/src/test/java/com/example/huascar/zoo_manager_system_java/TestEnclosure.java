@@ -17,4 +17,13 @@ public class TestEnclosure {
         enclosure.addAnimal(lion);
         assertEquals(1, enclosure.numberOfAnimals());
     }
+
+    @Test
+    public void testRemoveFromEnclosure() {
+        Jaguar jaguar = new Jaguar(30);
+        Enclosure enclosure = new Enclosure<Jaguar>();
+        enclosure.addAnimal(jaguar);
+        enclosure.removeAnimal(jaguar);
+        assertEquals(0, enclosure.numberOfAnimals());
+    }
 }
