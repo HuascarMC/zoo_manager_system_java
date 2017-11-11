@@ -5,4 +5,6 @@ package com.example.huascar.zoo_manager_system_java;
  */
 
 public class Animal {
+
+    int cash;
 }
