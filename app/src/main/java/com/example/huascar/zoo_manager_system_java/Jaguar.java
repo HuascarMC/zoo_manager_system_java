@@ -9,4 +9,8 @@ public class Jaguar extends Animal {
     public Jaguar(int cash) {
         super(cash);
     }
+
+    public int getCash() {
+        return cash;
+    }
 }
