@@ -10,11 +10,11 @@ public class Enclosure<T extends Animal> {
 
     ArrayList<T> enclosure;
 
-    public Enclosure(ArrayList<T> enclosure) {
-        this.enclosure = enclosure;
+    public Enclosure() {
+        this.enclosure = new ArrayList<>();
     }
 
-    public void add(T animal) {
+    public void addAnimal(T animal) {
         enclosure.add(animal);
     }
 

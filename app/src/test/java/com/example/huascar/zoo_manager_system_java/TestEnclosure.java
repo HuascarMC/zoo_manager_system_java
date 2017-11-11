@@ -13,8 +13,8 @@ public class TestEnclosure {
     @Test
     public void testAddToEnclosure() {
         Lion lion = new Lion(50);
-        Enclosure enclosure = new Enclosure<Lion>;
-        enclosure.add(lion);
+        Enclosure enclosure = new Enclosure<Lion>();
+        enclosure.addAnimal(lion);
         assertEquals(1, enclosure.numberOfAnimals());
     }
 }
