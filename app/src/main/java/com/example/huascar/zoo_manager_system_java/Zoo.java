@@ -66,9 +66,7 @@ public class Zoo {
     public int totalValueAnimals() {
         int total = 0;
         for (Enclosure enclosure : enclosures) {
-            for (Animal animal : enclosure) {
-                total += animal.cash;
-            }
+            total += enclosure.enclosureValue();
         }
         return total;
     }

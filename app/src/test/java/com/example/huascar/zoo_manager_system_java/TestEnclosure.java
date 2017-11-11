@@ -36,5 +36,10 @@ public class TestEnclosure {
     }
 
     @Test
-    
+    public void testEnclosureValue() {
+        Warthog warthog = new Warthog(40);
+        Enclosure warthogEnclosure = new Enclosure<Warthog>();
+        warthogEnclosure.addAnimal(warthog);
+        assertEquals(40, warthogEnclosure.enclosureValue());
+    }
 }
