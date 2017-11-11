@@ -9,10 +9,13 @@ import java.util.ArrayList;
 public class Zoo {
 
     private ArrayList<Enclosure> enclosures;
-    private int price = 30;
+    private int price;
+    private ArrayList<Visitor> visitors;
 
     public Zoo() {
         this.enclosures = new ArrayList<>();
+        this.price = 30;
+        this.visitors = new ArrayList<>();
     }
 
     public void addEnclosure(Enclosure enclosureName) {
@@ -44,5 +47,9 @@ public class Zoo {
                 enclosure.removeAnimal(animalName);
         }
         return money;
+    }
+
+    public int getPrice() {
+        return this.price;
     }
 }
