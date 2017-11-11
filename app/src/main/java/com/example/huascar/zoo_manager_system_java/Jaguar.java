@@ -10,7 +10,4 @@ public class Jaguar extends Animal {
         super(cash);
     }
 
-    public int getCash() {
-        return cash;
-    }
 }
