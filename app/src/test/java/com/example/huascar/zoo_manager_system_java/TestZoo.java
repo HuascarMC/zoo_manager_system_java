@@ -60,6 +60,8 @@ public class TestZoo {
     public void testZooHasVisitors() {
         Zoo zoo = new Zoo();
         Visitor visitor = new Visitor(40);
-
+        visitor.buyTicket(zoo);
+        zoo.addVisitor(visitor);
+        assertEquals(1, zoo.numberOfVisitors());
     }
 }

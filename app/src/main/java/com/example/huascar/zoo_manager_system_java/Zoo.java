@@ -56,4 +56,9 @@ public class Zoo {
     public void addVisitor(Visitor visitor) {
         visitors.add(visitor);
     }
+
+    public int numberOfVisitors() {
+        int actual = visitors.size();
+        return actual;
+    }
 }
