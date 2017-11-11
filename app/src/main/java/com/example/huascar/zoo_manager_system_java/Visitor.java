@@ -16,4 +16,7 @@ public class Visitor {
         this.wallet -= zoo.getPrice();
     }
 
+    public int getWallet() {
+        return wallet;
+    }
 }
